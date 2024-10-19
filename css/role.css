@@ -1,0 +1,29 @@
+.roleSelect {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid #34495E;
+    background-color: transparent; /* Transparent background */
+    color: black;
+    font-size: 12px; /* Smaller font size */
+    font-family: 'Arial', sans-serif;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.roleSelect:hover {
+    background-color: rgba(52, 73, 94, 0.5); /* Slightly transparent on hover */
+    border-color: #1ABC9C;
+}
+
+.roleSelect:focus {
+    outline: none;
+    border-color: #3498DB;
+}
+
+.roleSelect option {
+    background-color: #34495E;
+    color: white;
+}

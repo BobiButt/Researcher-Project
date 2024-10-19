@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Header Styling */
+header {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar input {
+    padding: 5px;
+    width: 200px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Banner Styling */
+.banner {
+    background-color: #e0f7fa;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 48px;
+    color: #00796b;
+}
+
+.banner p {
+    font-size: 24px;
+    color: #009688;
+}
+
+/* Profile Section Styling */
+.profile {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #888;
+}
+
+.profile-links {
+    margin-top: 10px;
+}
+
+.profile-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+}
+
+.about h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+}
+
+.post {
+    padding: 10px;
+    background-color: #e0f7fa;
+    margin-bottom: 10px;
+}
+
+.post h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}

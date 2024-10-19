@@ -1,0 +1,532 @@
+body {
+    background-image: url("../images/dashboard_back/Phone\ Wallpaper\ Abstract\ Golden\ Luxe\ Phone\ Wallpapers\,\ Modern\ Geometric\ and\ Digital\ Backgrounds\ Bundle\,\ Chic\ Black\ Aesthetic\ Screensavers.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: black; */
+    /* Dark background for better contrast */
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    /* Keep the navbar black */
+    padding: 15px 0px;
+    color: white;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow for depth */
+}
+
+.navbar .logo {
+    font-size: 32px;
+    /* Increased font size for visibility */
+    font-weight: 800;
+    /* Increased font weight for emphasis */
+    color: #4CAF50;
+    /* Green color for the logo */
+    font-style: italic;
+    /* Added italic style for a modern look */
+}
+
+.navbar .search-bar {
+    width: 450px;
+    /* Increased width for better usability */
+    padding: 12px 20px;
+    /* Adjusted padding for better spacing */
+    background: linear-gradient(135deg, #2C3E50, #4A69BD);
+    /* Gradient for a modern look */
+    border: 2px solid #ECF0F1;
+    /* Thicker border for better visibility */
+    border-radius: 30px;
+    /* Increased border-radius for a smoother look */
+    color: white;
+    font-size: 18px;
+    /* Increased font size for better readability */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow for depth */
+    outline: none;
+    transition: all 0.3s ease;
+    /* Smooth transition on focus */
+}
+
+.navbar .search-bar:focus {
+    border-color: #A4B0BD;
+    /* Border color changes on focus */
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.25);
+    /* More pronounced shadow on focus */
+    background: linear-gradient(135deg, #34495E, #4A69BD);
+    /* Darker gradient on focus */
+    /* Enhanced focus state for better user feedback */
+}
+
+.navbar .search-bar::placeholder {
+    color: #BDC3C7;
+    /* Placeholder text color */
+}
+
+#search-bar {
+    width: 100%;
+    width: 80%;
+    padding: 12px 20px;
+    background: none;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    outline: none;
+    transition: all 0.3s ease;
+    margin: auto;
+    
+
+}
+#search-bar:focus{
+    background-color: transparent;
+}
+
+.sidebar {
+    margin-top: 15%;
+    border-radius: 10px;
+    width: 15%;
+    background: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    display: none;
+    /* left: -100%; 
+    transition: left 0.3s; */
+    z-index: 1000;
+    /* Ensure it is above other content */
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #ff7e5f;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background: #feb47b;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 150px;
+    left: 20px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Responsive styles */
+@media (max-width: 1055px) {
+    .sidebar {
+        width: 30%;
+    }
+
+    .toggle-btn {
+        top: 20px;
+        /* Adjust button position */
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        /* left: -100%; */
+        width: 30%;
+        /* transition: left 0.3s; */
+
+    }
+
+
+    .toggle-btn {
+        top: 20px;
+        /* Adjust button position */
+    }
+}
+
+/* =================================== */
+.right-sidebar {
+    background-color: #f9f9f9de;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    position: fixed;
+    right: 0%;
+    z-index: 1000;
+    /* Ensure it is above other content */
+}
+
+#right_content {
+    display: none;
+}
+
+#right_content.show {
+    display: block;
+}
+
+.right-toggle-btn {
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-toggle-btn:hover {
+    background: #ff7e5f;
+
+}
+
+.find_friend {
+    width: 100%;
+}
+
+
+
+.dashboard {
+    display: flex;
+    /* background-color: #16A085; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Reduce gap between cards */
+    margin-top: 30px;
+    width: 70%;
+    /* left: 0%; */
+    /* margin: auto; */
+    font-family: 'Comic Sans MS', cursive;
+    /* background-color: red; */
+}
+
+.card {
+    background-color: #ECF0F1;
+    /* Light background for cards */
+    border-radius: 15px;
+    padding: 20px;
+    /* Reduce padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Softer shadow */
+    width: 250px;
+    /* Make the card slightly narrower */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    /* Subtle hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    /* Slightly stronger shadow on hover */
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    /* Smaller image */
+    height: 100px;
+    /* Adjust height proportionally */
+    margin-bottom: 10px;
+    /* Reduce margin */
+}
+
+.card .title {
+    font-size: 18px;
+    /* Smaller title */
+    font-weight: 500;
+    color: #333;
+    /* Dark text */
+    margin: 10px 0;
+    /* Less margin */
+}
+
+.card .username {
+    color: #888;
+    /* Lighter text for username */
+    font-size: 14px;
+    /* Smaller font for username */
+    margin-bottom: 10px;
+    /* Less margin */
+}
+
+.card .readme-link {
+    display: block;
+    margin: 10px 0;
+    color: #3498DB;
+    /* Blue for links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.readmore {
+    display: block;
+    margin: 10px 0;
+    color: #3498DB;
+    /* Blue for links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card .readme-link:hover {
+    color: #2980B9;
+    /* Darker blue on hover */
+}
+
+.card .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    /* Less margin */
+}
+
+.card .buttons button {
+    background-color: #27AE60;
+    /* Green buttons */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    /* Smaller padding */
+    border-radius: 6px;
+    /* Slightly smaller border-radius */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    /* Smaller font size */
+}
+
+.card .buttons button.dislike {
+    background-color: #E74C3C;
+    /* Red dislike button */
+}
+
+.card .buttons button:hover {
+    background-color: #1E8449;
+    /* Darker green on hover */
+}
+
+.card .buttons button.dislike:hover {
+    background-color: #C0392B;
+    /* Darker red on hover */
+}
+
+button:hover {
+    background-color: #16A085;
+    /* Darker shade on hover */
+    transform: translateY(-2px);
+    /* Lift effect */
+}
+
+.read_more {
+    padding: 10px 20px;
+    background-color: #1ABC9C;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+    /* Ensures divs are independent in height */
+}
+
+
+/* -------------- */
+.userInput[type="text"] {
+    width: 300px;
+    /* Adjust width */
+    padding: 10px;
+    border: 0px 0px 2px 0px solid #ccc;
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    outline: none;
+    margin: 10px 20px;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+    /* Smooth border transition */
+}
+
+.userInput[type="text"]::placeholder {
+    color: black;
+}
+
+/* Change border color when focused */
+.userInput[type="text"]:focus {
+    border-color: #4CAF50;
+    /* Green border on focus */
+}
+
+/* Styling the search button */
+.userButton[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth background transition */
+}
+
+/* Change background color on hover */
+.userButton[type="submit"]:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+
+/*---------=========================================  */
+.searchbar-container {
+    width: 30%;
+    margin: 30px 0px 0px 30px;
+    padding-bottom: 20px;
+    /* background-color: #1ABC9C; */
+    max-height: 200px;
+    border: 2px solid #1ABC9C;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.search-results {
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    max-height: 100px;
+    background-color: white;
+    border-radius: 0px;
+    /* padding:10px; */
+    margin: 10px 20px 10px 20px;
+    /* width:; */
+}
+
+.search-result a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #4CAF50;
+    /* Green color for the link */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.search-result button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    background-color: #1ABC9C;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.search-results {
+    max-height: 300px;
+    /* Adjust height as needed */
+    overflow-y: auto;
+    /* Vertical scroll when content exceeds height */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Styling each result */
+.search-result {
+    /* padding: 10px; */
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-result:last-child {
+    border-bottom: none;
+    /* Remove border from the last result */
+}
+
+.search-result a {}
+
+.search-result a:hover {
+    color: #45a049;
+    /* Darker green on hover */
+}
+
+/* Custom scrollbar styling for WebKit browsers (Chrome, Safari, etc.) */
+.search-results::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+.search-results::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Track (scrollbar background) */
+}
+
+.search-results::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Scrollbar thumb */
+    border-radius: 5px;
+    /* Rounded edges for thumb */
+}
+
+.search-results::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Darker scrollbar thumb on hover */
+}
+
+/* Styling for other browsers using CSS Scrollbar pseudo-elements */
+.search-results {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    /* Thumb color and track color */
+}
